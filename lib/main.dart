@@ -35,81 +35,247 @@ class HomeScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.lightBlue,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+      body:Scrollbar(
+        thickness: 20,
+        child: ListView(
+
           children: [
-            Container(
-              width: 200,
-              height: 200,
-              
-              child: Text('hello'),
-              alignment: Alignment.center,
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(15),
-              decoration: BoxDecoration(
-                color: Colors.lightBlueAccent,
-                border: Border.all(
-                  color: Colors.black,
-                   width: 3
-                ),
-                //borderRadius: BorderRadius.all(Radius.circular(50))
-                shape: BoxShape.circle
+            ListTile(
+              title: Text('Username'),
+              subtitle: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text('User@gmail.com'),
+                  Text('another subtitlew')
+                ],
               ),
-
+              leading: Icon(Icons.list),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () {
+                print('next page');
+              },
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField (
-                decoration: InputDecoration(
-                    fillColor: Colors.lightBlue,
-                    filled: true,
-                    hintText: 'email de',
-                    label: Text('Email'),
-                    hintStyle: TextStyle(
-                        color: Colors.yellow
-                    ),
-                    labelStyle: TextStyle(
-                        color: Colors.deepOrange
-                    ),
-                    suffixIcon: Icon(Icons.mail),
-                ),
-              ),
+            Divider(
+              height: 50,
+              thickness: 12,
+              color: Colors.pink,
+              indent: 16,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField (
-                obscureText: true,
-                decoration: InputDecoration(
-                    fillColor: Colors.lightBlue,
-                    filled: true,
-                    hintText: 'password de',
-                    label: Text('password'),
-                    hintStyle: TextStyle(
-                        color: Colors.white
-                    ),
-                    labelStyle: TextStyle(
-                        color: Colors.deepOrange
-                    ),
-
-                  suffixIcon: Icon(Icons.password),
-                  suffixIconColor: Colors.deepOrange
-                  
-                ),
-                
-              ),
+            ListTile(
+              title: Text('Username'),
+              subtitle: Text('User@gmail.com'),
+              leading: Icon(Icons.list),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () {
+                print('next page');
+              },
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+            ListTile(
+              title: Text('Username'),
+              subtitle: Text('User@gmail.com'),
+              leading: Icon(Icons.list),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () {
+                print('next page');
+              },
+            ),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
 
-            ],
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
 
-            )
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling down'),
+            Text('Scrolling '),
+            Text('Scrolling '),
+            Text('Scrolling  down'),
+            Text('Scrolling '),
+
+
+
+
           ],
-
         ),
-      ),
+      )
 
     );
   }
