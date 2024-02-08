@@ -26,7 +26,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   List<String> students= [
     'Rafat',
-    'Siam',
+    'Siam ',
     'Nafiz',
     'Kuddus',
   ];
