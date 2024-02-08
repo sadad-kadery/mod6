@@ -12,11 +12,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: HomeScreen(),
-        title: ' nunu chus');
+        title: 'App 2');
   }
 }
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+   HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  List<String> students= [
+    'Rafat',
+    'Siam',
+    'Nafiz',
+    'Kuddus',
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,71 +49,59 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.lightBlue,
       ),
       body:Scrollbar(
-        thickness: 20,
+        thickness: 10,
         radius: Radius.circular(12),
-        child: GridView(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
-          children: [
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
-            Icon(Icons.adb),
+      //child: ListView.builder()
+      // child: ListView.separated(
+      //   itemCount: 100,
+      //     itemBuilder: (context, index)
+      // {
+      //     return ListTile(
+      //         title: Text('Item number $index')
+      //         );
+      // },
+      //   separatorBuilder: (context, index){
+      //     return Column(
+      //       children: [
+      //         Text(index.toString())
+      //       ],
+      //     );
+      //   },
+      // ),
+      // //   child: GridView.builder(
+      // //     itemCount: 100,
+      // //     itemBuilder: (context, index)
+      // //     {
+      // //       return Column(
+      // //
+      // //         children: [
+      // //           Text(index.toString()),
+      // //           Icon(Icons.search_off),
+      // //         ],
+      // //       );
+      // //     },
+      // //       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      // //           crossAxisCount: 4,
+      // //       ),
+      // //
+      // //
+      // //   ),
+      // // )
+        child: ListView.separated(
+          itemCount: students.length,
+          itemBuilder: (context, index)
+          {
+            return ListTile(
 
-
-          ],
+              title: Text(students[index]),
+            );
+          },
+          separatorBuilder: (context, index)
+          {
+            return Divider();
+          },
         ),
       )
-
     );
   }
 }
